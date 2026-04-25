@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = 9000;
 
   // Example API route
   app.get("/api/health", (req, res) => {
@@ -32,7 +32,7 @@ async function startServer() {
   }
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Server running on http://0.0.0.0:${PORT}`);
+    console.log(`Server running on http://localhost:${PORT}/:`);
   });
 }
 
